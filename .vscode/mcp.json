@@ -1,8 +1,13 @@
 {
   "servers": {
     "terraform": {
-      "command": "npx",
-      "args": ["-y", "@hashicorp/terraform-mcp-server"]
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "hashicorp/terraform-mcp-server"
+      ]
     }
   }
 }
